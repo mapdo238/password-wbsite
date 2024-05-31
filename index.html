@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Teko&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password  generatore</title>
+</head>
+<body>
+    <h1 title="title">password  generatore</h1>
+    <div>    
+       <input value="10" id="charnum" type="number" min="1"><br>
+       <input checked="true" type="checkbox" id="checklower">
+       <label  for="checklower">Allow Lowercases</label><br>
+       <input checked="true" type="checkbox" id="checkupper">
+       <label for="checkupper">Allow Uppercases</label><br>
+       <input checked="true" type="checkbox" id="checknumbers">
+       <label for="checknumbers">Allow Numbers</label><br>
+       <input checked="true" type="checkbox" id="checksymbols">
+       <label for="checksymbols">Allow Symbols</label><br>
+       <button onclick="generate()">Generate</button>
+    </div>
+    <h1>the password is:</h1>
+    <h2 id="display"></h2>
+    <script src="main.js"></script>
+</body>
+</html>
